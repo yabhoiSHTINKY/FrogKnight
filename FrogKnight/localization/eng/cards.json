@@ -57,7 +57,7 @@
   "FROGKNIGHT-GRAPPLE_BLOCK.title": "Grapple Block",
   "FROGKNIGHT-GRAPPLEAND_RESTRAIN.description": "Gain 1 [gold]Inner Peace[/gold], Apply {WeakPower:diff()} [gold]Constrict[/gold] to all enemies",
   "FROGKNIGHT-GRAPPLEAND_RESTRAIN.title": "Grapple Restrain",
-  "FROGKNIGHT-NOURISHMENT.description": "Deal {Damage:diff()} Damage, If lethal gain Max Hp",
+  "FROGKNIGHT-NOURISHMENT.description": "Deal {Damage:diff()} Damage, If [gold]Fatal[/gold] gain Max Hp",
   "FROGKNIGHT-NOURISHMENT.title": "Nourishment",
   "FROGKNIGHT-ARTIFACT_ARMOR.description": "Gain 3 Artifact",
   "FROGKNIGHT-ARTIFACT_ARMOR.title": "Artifact Armor",
