@@ -103,7 +103,7 @@
   "FROGKNIGHT-PRAYER_FROG.title": "Prayer",
   "FROGKNIGHT-DESTABILIZE_FROG.description": "Deal {Damage:diff()} damage and remove {StrengthLoss:diff()} [gold]Strength[/gold] from them",
   "FROGKNIGHT-DESTABILIZE_FROG.title": "Destabilize",
-  "FROGKNIGHT-PEACE_EXHAUSTED_FROG.description": "Deal 4 Damage For each [gold]Inner Peace[/gold] in the Exhaust Pile. ",
+  "FROGKNIGHT-PEACE_EXHAUSTED_FROG.description": "Deal 4 Damage For each [gold]Inner Peace[/gold] in the [gold]Exhaust Pile[/gold]. ",
   "FROGKNIGHT-PEACE_EXHAUSTED_FROG.title": "Peace Exhausted",
   "FROGKNIGHT-BREAKING_COVER.description": "Gain {Block:diff()} [gold]Block[/gold], Place 2 [gold]Debris[/gold] in [gold]Hand[/gold].",
   "FROGKNIGHT-BREAKING_COVER.title": "Breaking Cover",
