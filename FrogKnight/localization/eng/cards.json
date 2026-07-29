@@ -25,7 +25,7 @@
   "FROGKNIGHT-MIGHTY_FROG.title": "Mighty Frog",
   "FROGKNIGHT-INNER_PEACE.description": "Draw 2 Cards",
   "FROGKNIGHT-INNER_PEACE.title": "Inner Peace",
-  "FROGKNIGHT-TAKE_A_MOMENT.description": "Generate 1 [gold]Inner Peace[/gold] In Hand, Discard Pile and [gold]Draw Pile[/gold].",
+  "FROGKNIGHT-TAKE_A_MOMENT.description": "Generate 1 [gold]Inner Peace[/gold] In Hand, [gold]Discard Pile[/gold] and [gold]Draw Pile[/gold].",
   "FROGKNIGHT-TAKE_A_MOMENT.title": "Take A Moment",
   "FROGKNIGHT-BUG_BITE_FROG.description": "Deal {Damage:diff()} damage to all enemies, Heal 5",
   "FROGKNIGHT-BUG_BITE_FROG.title": "Bug Bite",
