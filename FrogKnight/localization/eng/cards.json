@@ -87,7 +87,7 @@
   "FROGKNIGHT-SHEILD_WALL.title": "Shield Wall",
   "FROGKNIGHT-AND_ANOTHERFROG.description": "Gain {Block:diff()} [gold]Block[/gold], Draw 1 Card",
   "FROGKNIGHT-AND_ANOTHERFROG.title": "Another",
-  "FROGKNIGHT-GREETING_BOW.description": "Greet Your Opponent, This Stuns them.",
+  "FROGKNIGHT-GREETING_BOW.description": "Greet Your Opponent, This [gold]Stun[/gold]s them.",
   "FROGKNIGHT-GREETING_BOW.title": "Greeting Bow",
   "FROGKNIGHT-MAKE_READY.description": "Apply 1 [gold]Strength[/gold], [gold]Plating[/gold] and Dexterity",
   "FROGKNIGHT-MAKE_READY.title": "Make Ready",
