@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1vyor3q02vsc"]
+
+[ext_resource type="Texture2D" path="res://FrogKnight/images/restsite/Frogknightrest.png" id="Frog"]
+
+[node name="FrogRestSite" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 5.0
+offset_bottom = 4.0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(17, -204)
+texture = ExtResource("Frog")
+flip_h = 0
+
+[node name="ControlRoot" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Hitbox" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = -245.0
+offset_top = -382.0
+offset_right = -3.0
+offset_bottom = -34.0
+
+[node name="ThoughtBubbleRight" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_left = 44.7365
+offset_top = -313.155
+offset_right = 44.7365
+offset_bottom = -313.155
+
+[node name="ThoughtBubbleLeft" type="Control" parent="ControlRoot"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 0
+offset_left = -218.419
+offset_top = -315.787
+offset_right = -218.419
+offset_bottom = -315.787

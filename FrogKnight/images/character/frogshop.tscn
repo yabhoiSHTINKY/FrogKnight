@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7uwpp3pg4eaq"]
+
+[ext_resource type="Texture2D"  path="res://FrogKnight/images/character/shop2frog.png" id="1_ysuet"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Frogknightshop" type="Sprite2D" parent="."]
+position = Vector2(85, -101)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("1_ysuet")

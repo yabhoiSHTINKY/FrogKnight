@@ -1,0 +1,143 @@
+[gd_scene load_steps=9 format=3 uid="uid://blc72q7xwqjev"]
+
+[ext_resource type="Texture2D"  path="res://FrogKnight/images/energycounter/vfx2.png" id="1_xqgbc"]
+[ext_resource type="Texture2D"  path="res://FrogKnight/images/energycounter/froge.png" id="2_v0qeg"]
+[ext_resource type="Texture2D"  path="res://FrogKnight/images/energycounter/froge2.png" id="3_qnvmh"]
+[ext_resource type="Texture2D"  path="res://FrogKnight/images/energycounter/froge3.png" id="4_fcwai"]
+[ext_resource type="Texture2D"  path="res://FrogKnight/images/energycounter/vfx1.png" id="5_ns784"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8dq4v"]
+lifetime_randomness = 0.06
+particle_flag_rotate_y = true
+particle_flag_disable_z = true
+orbit_velocity_min = 0.0710001
+orbit_velocity_max = 0.0710001
+gravity = Vector3(0, 0, 0)
+turbulence_noise_strength = 3.3
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0jkym"]
+particle_flag_align_y = true
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(0, 0, 0)
+orbit_velocity_min = 0.32900012
+orbit_velocity_max = 0.32900012
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_kreon_bold_shared_font"]
+spacing_glyph = 2
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(64, 64)
+
+[node name="Layers" type="Control" parent="."]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnergyVfxBack" type="GPUParticles2D" parent="Layers"]
+position = Vector2(64.00001, 64.00001)
+rotation = -0.0005633011
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_xqgbc")
+lifetime = 0.15000000000000002
+explosiveness = 0.15
+randomness = 0.3
+process_material = SubResource("ParticleProcessMaterial_8dq4v")
+
+[node name="Layer1" type="TextureRect" parent="Layers"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 88.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_v0qeg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RotationLayers" type="Control" parent="Layers"]
+unique_name_in_owner = true
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Layer2" type="TextureRect" parent="Layers/RotationLayers"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 88.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(64, 64)
+mouse_filter = 2
+texture = ExtResource("3_qnvmh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Layer3" type="TextureRect" parent="Layers"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 108.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.00056330115
+scale = Vector2(0.6769498, 0.64668393)
+texture = ExtResource("4_fcwai")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EnergyVfxFront" type="GPUParticles2D" parent="Layers/Layer3"]
+show_behind_parent = true
+texture_filter = 1
+position = Vector2(63.966198, 60.03605)
+rotation = 0.00056330115
+scale = Vector2(1.0000001, 1.0000001)
+amount = 1
+texture = ExtResource("5_ns784")
+lifetime = 600.0
+randomness = 0.09
+interpolate = false
+fract_delta = false
+visibility_rect = Rect2(-150, -150, 300, 300)
+process_material = SubResource("ParticleProcessMaterial_0jkym")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1.5505267, 1.5488708, 1.4055827, 0.96862745)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0.18431373, 0.003921569, 0.3372549, 0.7411765)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 16
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = SubResource("FontVariation_kreon_bold_shared_font")
+theme_override_font_sizes/font_size = 18
+text = "3/3"
+horizontal_alignment = 1
+vertical_alignment = 1
