@@ -4,7 +4,7 @@
   "FROGKNIGHT-DEFEND_FROG_KNIGHT.title": "Defend",
   "FROGKNIGHT-DEFEND_FROG_KNIGHT.description": "Gain {Block:diff()} Block.",
   "FROGKNIGHT-WELL_DEFENDED_FROG.title": "Well Defended",
-  "FROGKNIGHT-WELL_DEFENDED_FROG.description": "Gain {Block:diff()} Block. Apply {PlatingPower:diff()} Plating.",
+  "FROGKNIGHT-WELL_DEFENDED_FROG.description": "Gain {Block:diff()} Block. Apply {PlatingPower:diff()} [gold]Plating[/gold].",
   "FROGKNIGHT-WEAKENING_BLOW.title": "Weakening Blow",
   "FROGKNIGHT-WEAKENING_BLOW.description": "Deal {Damage:diff()} damage. Apply {WeakPower:diff()} Weak.",
   "FROGKNIGHT-SMITE_FROG.title": "Smite",
