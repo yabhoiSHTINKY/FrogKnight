@@ -3,6 +3,7 @@ using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -18,6 +19,12 @@ public class RecklessFrog() : FrogKnightCard(3,
     {
         new PowerVar<DexterityPower>(-2),
         new PowerVar<RecklessFrogPower>(1)
+    };
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<RecklessFrogPower>(),
+        HoverTipFactory.FromPower<DexterityPower>()
     };
 
     protected override async Task OnPlay(

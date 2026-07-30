@@ -2,6 +2,7 @@ using FrogKnight.FrogKnightCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -20,6 +21,12 @@ public class ConquerFrog() : FrogKnightCard(1,
     {
         new PowerVar<WeakPower>(1m),
         new DynamicVar("StrengthPerWeak", 1m)
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[2]
+    {
+        HoverTipFactory.FromPower<WeakPower>(),
+        HoverTipFactory.FromPower<StrengthPower>()
     };
 
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/Conquer.png";

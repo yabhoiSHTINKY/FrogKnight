@@ -4,6 +4,7 @@ using FrogKnight.FrogKnightCode.Extensions;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -22,6 +23,11 @@ public class WeakeningBlow() : FrogKnightCard(2,
     {
         new DamageVar(8m, ValueProp.Move),
         new PowerVar<WeakPower>(2m)
+    };
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[1]
+    {
+        HoverTipFactory.FromPower<WeakPower>()
     };
 
     protected override async Task OnPlay(

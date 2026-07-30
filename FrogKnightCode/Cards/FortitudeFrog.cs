@@ -3,6 +3,7 @@ using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -16,6 +17,11 @@ public class FortitudeFrog() : FrogKnightCard(3,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new PowerVar<PlatingPower>(2)
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[1]
+    {
+        HoverTipFactory.FromPower<PlatingPower>()
     };
     
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/Fortittude.png";

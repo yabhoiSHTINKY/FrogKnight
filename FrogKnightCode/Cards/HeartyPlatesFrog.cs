@@ -2,6 +2,7 @@ using FrogKnight.FrogKnightCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -17,6 +18,12 @@ public class HeartyPlatesFrog() : FrogKnightCard(1,
     {
         new PowerVar<PlatingPower>(3m),
         new PowerVar<VigorPower>(6m)
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<PlatingPower>(),
+        HoverTipFactory.FromPower<VigorPower>()
     };
 
     protected override async Task OnPlay(
