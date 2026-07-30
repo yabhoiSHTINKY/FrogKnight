@@ -15,10 +15,9 @@ public class GrappleBlock() : FrogKnightCard(1,
     TargetType.AllEnemies)
 {
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/grappleblock.png";
-    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[3]
+    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
         new BlockVar(3m, ValueProp.Move),
-        new PowerVar<ConstrictPower>(1),
         new PowerVar<WeakPower>(1)
     };
     
