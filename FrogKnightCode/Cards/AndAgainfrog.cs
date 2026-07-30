@@ -37,7 +37,6 @@ public class AndAgainfrog() : FrogKnightCard(0,
 
     protected override void OnUpgrade()
     { 
-        base.EnergyCost.UpgradeBy(-1);
         base.DynamicVars.Damage.UpgradeValueBy(2m);
     }
 }

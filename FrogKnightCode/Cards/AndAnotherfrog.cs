@@ -25,7 +25,6 @@ public class AndAnotherfrog() : FrogKnightCard(0,
         new BlockVar(3m, ValueProp.Move),
         new CardsVar(1)
     };
-    
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -38,6 +37,6 @@ public class AndAnotherfrog() : FrogKnightCard(0,
 
     protected override void OnUpgrade()
     {
-        base.EnergyCost.UpgradeBy(-1);
+        base.DynamicVars.Block.UpgradeValueBy(2);
     }
 }
