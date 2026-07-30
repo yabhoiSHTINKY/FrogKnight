@@ -22,7 +22,7 @@ public class BugBiteFrog() : FrogKnightCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
         new DamageVar(10m, ValueProp.Move),
-        new HealVar(2m)
+        new HealVar(5m)
     };
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/Snack.png";
 
