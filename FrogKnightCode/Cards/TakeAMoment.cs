@@ -64,6 +64,6 @@ public class TakeAMoment() : FrogKnightCard(1,
 
     protected override void OnUpgrade()
     {
-
+    base.EnergyCost.UpgradeBy(-1);
     }
 }
