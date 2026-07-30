@@ -19,11 +19,6 @@ public class RecklessFrogPower() : FrogKnightPower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
-    {
-        new EnergyVar(1)
-    };
-
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
         HoverTipFactory.ForEnergy((PowerModel) this)

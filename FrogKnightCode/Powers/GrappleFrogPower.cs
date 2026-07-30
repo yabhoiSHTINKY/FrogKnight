@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
@@ -20,6 +21,11 @@ public class GrappleFrogPower() : FrogKnightPower
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<ConstrictPower>()
+    };
     
     public override string CustomPackedIconPath => "res://FrogKnight/images/powers/grapplepower.png";
     public override string CustomBigIconPath => "res://FrogKnight/images/powers/grapplepower.png";
