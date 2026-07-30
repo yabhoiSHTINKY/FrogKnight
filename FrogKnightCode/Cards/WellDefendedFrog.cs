@@ -21,7 +21,7 @@ public partial class WellDefendedFrog() : FrogKnightCard(2,
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<PlatingPower>(),
+        HoverTipFactory.FromPower<PlatingPower>()
     };
 
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]

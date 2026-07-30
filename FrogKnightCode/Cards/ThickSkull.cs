@@ -2,6 +2,7 @@ using FrogKnight.FrogKnightCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -16,6 +17,12 @@ public class ThickSkull() : FrogKnightCard(2,
     {
         new PowerVar<DexterityPower>(2),
         new PowerVar<WeakPower>(3)
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<DexterityPower>(),
+        HoverTipFactory.FromPower<WeakPower>()
     };
 
     protected override async Task OnPlay(

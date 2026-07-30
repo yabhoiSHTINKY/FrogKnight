@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -18,6 +19,11 @@ public class BatteringRamFrog() : FrogKnightCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         ..MakeCalculatedDamage(0, (card, target) => card.Owner.Creature.GetPowerAmount<PlatingPower>(),2)];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<PlatingPower>()
+    };
     
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/batteringram.png";
 

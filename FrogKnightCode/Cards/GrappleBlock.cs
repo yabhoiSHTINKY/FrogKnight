@@ -2,6 +2,7 @@ using FrogKnight.FrogKnightCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -20,6 +21,13 @@ public class GrappleBlock() : FrogKnightCard(1,
         new PowerVar<ConstrictPower>(1),
         new PowerVar<WeakPower>(1)
     };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<ConstrictPower>(),
+        HoverTipFactory.FromPower<WeakPower>()
+    };
+
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

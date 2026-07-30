@@ -2,6 +2,7 @@ using FrogKnight.FrogKnightCode.Cards;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -20,6 +21,12 @@ public class GrappleandRestrain() : FrogKnightCard(1,
         new CardsVar(1),
         new PowerVar<ConstrictPower>(1),
         new PowerVar<WeakPower>(1)
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromCard<InnerPeace>(),
+        HoverTipFactory.FromPower<ConstrictPower>()
     };
 
     protected override async Task OnPlay(
@@ -40,7 +47,7 @@ public class GrappleandRestrain() : FrogKnightCard(1,
         }
         catch (Exception ex)
         {
-            Godot.GD.PrintErr($"[TakeAMoment] Error in OnPlay: " + ex);
+            Godot.GD.PrintErr($"[GrappleandRestrain] Error in OnPlay: " + ex);
         } 
     }
 
