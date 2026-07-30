@@ -129,7 +129,7 @@
   "FROGKNIGHT-FURRY_SWIPES.title": "Fury Swipes",
   "FROGKNIGHT-OFF_GUARD_FROG.description": "Deal {Damage:diff()} damage, Apply {VulnerablePower} [gold]Vulnerable[/gold].",
   "FROGKNIGHT-OFF_GUARD_FROG.title": "Off Guard",
-  "FROGKNIGHT-SALVE.description": "Gain {RegenPower} Regen.",
+  "FROGKNIGHT-SALVE.description": "Gain {RegenPower} [gold]Regen[/gold].",
   "FROGKNIGHT-SALVE.title": "Salve",
   "FROGKNIGHT-RIPOSTE.description": "Deal {Damage:diff()} damage. Draw {Cards:diff()} card{Cards:plural:|s}.",
   "FROGKNIGHT-RIPOSTE.title": "Riposte",
