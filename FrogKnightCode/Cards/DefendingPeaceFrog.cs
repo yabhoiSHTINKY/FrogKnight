@@ -3,7 +3,9 @@ using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace FrogKnight.FrogKnightCode.Cards;
 
@@ -14,6 +16,13 @@ public class DefendingPeaceFrog() : FrogKnightCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new PowerVar<DefendingPeaceFrogPower>(1)
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    {
+        HoverTipFactory.FromPower<PlatingPower>(),
+        HoverTipFactory.FromPower<VigorPower>(),
+        HoverTipFactory.FromCard<InnerPeace>()
     };
     
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/defendpeace.png";
