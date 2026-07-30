@@ -10,6 +10,9 @@ namespace FrogKnight.FrogKnightCode.Powers;
 
 public class RecklessFrogPower() : FrogKnightPower
 {
+    
+    //This Power is very similar to the Vanilla Frienship
+    
     public override PowerType Type =>
         PowerType.Buff;
 
