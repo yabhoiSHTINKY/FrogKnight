@@ -15,10 +15,11 @@ public class RecklessFrog() : FrogKnightCard(3,
     TargetType.Self)
 {
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/reckless.png";
-    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
+    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[3]
     {
         new PowerVar<DexterityPower>(-2),
-        new PowerVar<RecklessFrogPower>(1)
+        new PowerVar<RecklessFrogPower>(1),
+        new EnergyVar(1)
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]

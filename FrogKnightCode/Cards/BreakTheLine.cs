@@ -21,7 +21,7 @@ public class BreakTheLine() : FrogKnightCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[4]
     {
         new PowerVar<WeakPower>(3),
-        new PowerVar<StrengthPower>(-1),
+        new PowerVar<StrengthPower>(1),
         new CardsVar(2),
         new DamageVar(4m, ValueProp.Move)
     };
@@ -50,7 +50,8 @@ public class BreakTheLine() : FrogKnightCard(2,
                 .Execute(choiceContext);
             await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, base.DynamicVars.Weak.BaseValue,
                 base.Owner.Creature, this);
-            await PowerCmd.Apply<StrengthPower>(choiceContext, play.Target, base.DynamicVars.Weak.BaseValue,
+            // Added Negative Sign to decrease strength amount
+            await PowerCmd.Apply<StrengthPower>(choiceContext, play.Target, -base.DynamicVars.Strength.BaseValue,
                 base.Owner.Creature, this);
             try
             {
