@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace FrogKnight.FrogKnightCode.Cards;
 
-public class WeaknessRevealed() : FrogKnightCard(0,
+public class WeaknessRevealed() : FrogKnightCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
@@ -45,6 +45,6 @@ public class WeaknessRevealed() : FrogKnightCard(0,
 
     protected override void OnUpgrade()
     {
-
+        base.EnergyCost.UpgradeBy(-1);
     }
 }

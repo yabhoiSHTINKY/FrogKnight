@@ -32,7 +32,7 @@ public class GrowingPowerFrogPower() : FrogKnightPower
         {
             Flash();
             await PowerCmd.Apply<MegaCrit.Sts2.Core.Models.Powers.VigorPower>(choiceContext,
-                base.Owner, 2m,
+                base.Owner, base.Amount,
                 base.Owner, (CardModel?)null);
         }
         catch (Exception ex)
