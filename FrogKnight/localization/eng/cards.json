@@ -117,7 +117,7 @@
   "FROGKNIGHT-MAKE_HASTE_FROG.title": "Make Haste",
   "FROGKNIGHT-BREAK_THE_LINE.description": "Deal {Damage} damage, Apply {WeakPower} [gold]Weak[/gold], and remove {StrengthPower} [gold]Strength[/gold]. Place {Cards} [gold]Debris[/gold] in [gold]Hand[/gold].",
   "FROGKNIGHT-BREAK_THE_LINE.title": "Break The Line",
-  "FROGKNIGHT-OUT_MANEUVER.description": "Apply {IntangiblePower} Intangible.",
+  "FROGKNIGHT-OUT_MANEUVER.description": "Apply {IntangiblePower} [gold]Intangible[/gold].",
   "FROGKNIGHT-OUT_MANEUVER.title": "Out Maneuver",
   "FROGKNIGHT-HEARTY_DEFENCE.description":"Gain {Block:diff()} [gold]Block[/gold] and {VigorPower} [gold]Vigor[/gold].",
   "FROGKNIGHT-HEARTY_DEFENCE.title": "Hearty Defence",
