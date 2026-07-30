@@ -18,7 +18,7 @@ public class GrowingPowerFrog() : FrogKnightCard(2,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<GrowingPowerFrogPower>(1m)
+        new PowerVar<GrowingPowerFrogPower>(2m)
     };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
