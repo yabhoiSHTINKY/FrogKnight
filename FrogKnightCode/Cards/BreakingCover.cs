@@ -63,6 +63,6 @@ public class BreakingCover() : FrogKnightCard(1,
     
     protected override void OnUpgrade()
     {
-
+        base.DynamicVars.Block.UpgradeValueBy(3m);
     }
 }
