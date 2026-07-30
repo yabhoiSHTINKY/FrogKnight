@@ -13,7 +13,7 @@ public class PlatedFrog() : FrogKnightCard(1,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.Self)
 {
-    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/WellDefended.png";
+    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/plated.png";
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[]
     {

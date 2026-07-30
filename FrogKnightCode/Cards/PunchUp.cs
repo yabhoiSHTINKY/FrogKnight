@@ -14,7 +14,7 @@ public class PunchUp() : FrogKnightCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
-    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/Strike.png";
+    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/punchup.png";
     
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {

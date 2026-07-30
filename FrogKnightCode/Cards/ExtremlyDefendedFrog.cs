@@ -13,7 +13,7 @@ public class ExtremlyDefendedFrog() : FrogKnightCard(2,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/WellDefended.png";
+    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/extremedefendfrog.png";
     
     protected override HashSet<CardTag> CanonicalTags => new HashSet<CardTag> { CardTag.Defend };
     
