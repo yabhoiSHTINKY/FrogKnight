@@ -15,6 +15,8 @@ public class NobleKnightsHonor() : FrogKnightRelic
         RelicRarity.Starter;
 
     public override string PackedIconPath => "res://FrogKnight/images/relics/NobleKnightsHonor.png";
+    
+    protected override string BigIconPath => "res://FrogKnight/images/relics/NobleKnightsHonor.png";
 
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[] { new PowerVar<PlatingPower>(6m) };
 
