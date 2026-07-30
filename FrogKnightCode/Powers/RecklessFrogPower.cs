@@ -1,6 +1,7 @@
 using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace FrogKnight.FrogKnightCode.Powers;
 
@@ -12,7 +13,12 @@ public class RecklessFrogPower() : FrogKnightPower
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
-    
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
+    {
+        new EnergyVar(1)
+    };
+
     public override string CustomPackedIconPath => "res://FrogKnight/images/powers/recklesspower.png";
     public override string CustomBigIconPath => "res://FrogKnight/images/powers/recklesspower.png";
     public override decimal ModifyMaxEnergy(Player player, decimal amount)
