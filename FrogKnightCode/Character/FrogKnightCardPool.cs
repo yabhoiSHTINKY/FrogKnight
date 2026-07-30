@@ -8,7 +8,7 @@ public class FrogKnightCardPool : CustomCardPoolModel
 {
     public override string Title => FrogKnight.CharacterId; //This is not a display name.
 
-    public override string? BigEnergyIconPath => "res://FrogKnight/images/charui/card_orb.png";
+    public override string? BigEnergyIconPath => "res://FrogKnight/images/charui/big_energy.png";
     public override string TextEnergyIconPath => "charui/text_energy.png".ImagePath();
 
 
