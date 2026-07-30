@@ -18,7 +18,7 @@ public class PunchUp() : FrogKnightCard(1,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
-        new PowerVar<PlatingPower>(2),
+        new PowerVar<PlatingPower>(1),
         new DamageVar(6m, ValueProp.Move)
     };
     

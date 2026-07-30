@@ -21,7 +21,7 @@ public class PlatedFrog() : FrogKnightCard(1,
     };
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<PlatingPower>(5)
+        new PowerVar<PlatingPower>(3)
     };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]

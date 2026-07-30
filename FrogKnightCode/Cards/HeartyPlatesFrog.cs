@@ -16,7 +16,7 @@ public class HeartyPlatesFrog() : FrogKnightCard(1,
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/HeartyPlates.png";
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
-        new PowerVar<PlatingPower>(3m),
+        new PowerVar<PlatingPower>(2m),
         new PowerVar<VigorPower>(6m)
     };
     
@@ -37,7 +37,7 @@ public class HeartyPlatesFrog() : FrogKnightCard(1,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars["PlatingPower"].UpgradeValueBy(2m);
+        base.DynamicVars["PlatingPower"].UpgradeValueBy(1m);
         base.DynamicVars["VigorPower"].UpgradeValueBy(2m);
     }
 }
