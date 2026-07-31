@@ -9,30 +9,30 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace FrogKnight.FrogKnightCode.Cards;
 
-public class GrappleFrog() : FrogKnightCard(2,
+public class GrapplingFrog() : FrogKnightCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new PowerVar<GrappleFrogPower>(1)
+        new PowerVar<GrapplingFrogPower>(1)
     };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<GrappleFrogPower>(),
-        HoverTipFactory.FromPower<ContfrogPower>()
+        HoverTipFactory.FromPower<GrapplingFrogPower>(),
+        HoverTipFactory.FromPower<GrappleFrogPower>()
     };
 
-    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/grapplefrog.png";
+    public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/grapplingfrog.png";
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
-        await PowerCmd.Apply<GrappleFrogPower>(choiceContext, base.Owner.Creature,
-            base.DynamicVars["GrappleFrogPower"].BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<GrapplingFrogPower>(choiceContext, base.Owner.Creature,
+            base.DynamicVars["GrapplingFrogPower"].BaseValue, base.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

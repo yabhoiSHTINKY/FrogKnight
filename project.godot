@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="FrogKnight"
+run/main_scene="uid://c7mv743y7xmd3"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
 config/icon="res://FrogKnight/mod_image.png"
 

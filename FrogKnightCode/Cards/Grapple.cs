@@ -19,12 +19,12 @@ public class Grapple() : FrogKnightCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
         new DamageVar(8,ValueProp.Move),
-        new PowerVar<WeakPower>(3)
+        new PowerVar<GrappleFrogPower>(3)
     };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<ContfrogPower>()
+        HoverTipFactory.FromPower<GrappleFrogPower>()
     };
     
 
@@ -44,7 +44,7 @@ public class Grapple() : FrogKnightCard(2,
         {
             Godot.GD.PrintErr($"[Grapple] Error in OnPlay: " + ex);
         }  
-        await PowerCmd.Apply<ContfrogPower>(choiceContext, play.Target, base.DynamicVars.Weak.BaseValue,
+        await PowerCmd.Apply<GrappleFrogPower>(choiceContext, play.Target, base.DynamicVars["GrappleFrogPower"].BaseValue,
             base.Owner.Creature, this);
     }
     
@@ -52,7 +52,7 @@ public class Grapple() : FrogKnightCard(2,
     protected override void OnUpgrade()
     {
         base.DynamicVars.Damage.UpgradeValueBy(4m);
-        base.DynamicVars.Weak.UpgradeValueBy(2);
+        base.DynamicVars["GrappleFrogPower"].UpgradeValueBy(2);
         base.EnergyCost.UpgradeBy(-1);
     }
 }

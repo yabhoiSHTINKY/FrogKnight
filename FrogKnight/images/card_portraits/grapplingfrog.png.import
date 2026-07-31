@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cue06rul5ipte"
-path="res://.godot/imported/grabble.png-2176b498ab74b858aade9d348c447063.ctex"
+uid="uid://3cqb0qr2qtx0"
+path="res://.godot/imported/grapplingfrog.png-353aca69fea73fe58dc08636c08e3419.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrogKnight/images/powers/grabble.png"
-dest_files=["res://.godot/imported/grabble.png-2176b498ab74b858aade9d348c447063.ctex"]
+source_file="res://FrogKnight/images/card_portraits/grapplingfrog.png"
+dest_files=["res://.godot/imported/grapplingfrog.png-353aca69fea73fe58dc08636c08e3419.ctex"]
 
 [params]
 

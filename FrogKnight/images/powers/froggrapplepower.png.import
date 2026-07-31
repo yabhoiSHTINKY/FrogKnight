@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3cqb0qr2qtx0"
-path="res://.godot/imported/grapplefrog.png-91858bb23971002ffefee4f28d681723.ctex"
+uid="uid://cue06rul5ipte"
+path="res://.godot/imported/froggrapplepower.png-e36ac2c5eee39d66659900111211a2f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrogKnight/images/card_portraits/grapplefrog.png"
-dest_files=["res://.godot/imported/grapplefrog.png-91858bb23971002ffefee4f28d681723.ctex"]
+source_file="res://FrogKnight/images/powers/froggrapplepower.png"
+dest_files=["res://.godot/imported/froggrapplepower.png-e36ac2c5eee39d66659900111211a2f1.ctex"]
 
 [params]
 
