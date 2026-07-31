@@ -69,7 +69,7 @@
   "FROGKNIGHT-DEFENDING_PEACE_FROG.title": "Defending Peace",
   "FROGKNIGHT-BATTLE_CRY.description": "Apply {WeakPower:diff()} [gold]Weak[/gold] to ALL enemies.",
   "FROGKNIGHT-BATTLE_CRY.title": "Battle Cry",
-  "FROGKNIGHT-GRAPPLE.description": "Deal {Damage:diff()} damage.\nApply {WeakPower:diff()} [gold]Grapple/gold].",
+  "FROGKNIGHT-GRAPPLE.description": "Deal {Damage:diff()} damage.\nApply {WeakPower:diff()} [gold]Grapple[/gold].",
   "FROGKNIGHT-GRAPPLE.title": "Grapple",
   "FROGKNIGHT-TRUE_VIGOR.description": "Gain {VigorPower:diff()} [gold]Vigor[/gold].",
   "FROGKNIGHT-TRUE_VIGOR.title": "True Vigor",
