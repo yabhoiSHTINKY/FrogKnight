@@ -29,7 +29,7 @@
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.description": "[gold]Weak[/gold] has double as effectiveness",
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.smartDescription": "[gold]Weak[/gold] has double as effectiveness",
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.title": "Imposing Figure",
-  "FROGKNIGHT-CONTFROG_POWER.description": "Deal {Amount} damage a the end of their turn.",
+  "FROGKNIGHT-CONTFROG_POWER.description": "Deal [blue]1[/blue] damage a the end of their turn.",
   "FROGKNIGHT-CONTFROG_POWER.smartDescription": "Deal {Amount} damage a the end of their turn.",
   "FROGKNIGHT-CONTFROG_POWER.title": "Grapple"
 }
