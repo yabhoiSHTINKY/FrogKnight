@@ -1,4 +1,5 @@
 using FrogKnight.FrogKnightCode.Cards;
+using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -25,7 +26,7 @@ public class GrappleandRestrain() : FrogKnightCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
         HoverTipFactory.FromCard<InnerPeace>(),
-        HoverTipFactory.FromPower<ConstrictPower>()
+        HoverTipFactory.FromPower<ContfrogPower>()
     };
 
     protected override async Task OnPlay(
@@ -33,7 +34,7 @@ public class GrappleandRestrain() : FrogKnightCard(1,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
-        await PowerCmd.Apply<ConstrictPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<ContfrogPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
         try
         {
             for (int _i = 0; _i < 1; _i++)

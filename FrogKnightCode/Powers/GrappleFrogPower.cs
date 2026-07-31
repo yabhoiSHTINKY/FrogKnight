@@ -24,7 +24,7 @@ public class GrappleFrogPower() : FrogKnightPower
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<ConstrictPower>()
+        HoverTipFactory.FromPower<ContfrogPower>()
     };
     
     public override string CustomPackedIconPath => "res://FrogKnight/images/powers/grapplepower.png";
@@ -37,6 +37,6 @@ public class GrappleFrogPower() : FrogKnightPower
         }
         Flash();
         await Cmd.CustomScaledWait(0.2f, 0.4f);
-        await PowerCmd.Apply<ConstrictPower>(new ThrowingPlayerChoiceContext(), base.CombatState.HittableEnemies, base.Amount, base.Owner, null);
+        await PowerCmd.Apply<ContfrogPower>(new ThrowingPlayerChoiceContext(), base.CombatState.HittableEnemies, base.Amount, base.Owner, null);
     }
 }

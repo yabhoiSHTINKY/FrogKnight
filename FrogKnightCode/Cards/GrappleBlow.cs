@@ -1,6 +1,7 @@
 using BaseLib.Extensions;
 using BaseLib.Patches.Features;
 using FrogKnight.FrogKnightCode.Cards;
+using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -26,7 +27,7 @@ public class GrappleBlow() : FrogKnightCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<ConstrictPower>(),
+        HoverTipFactory.FromPower<ContfrogPower>(),
         HoverTipFactory.FromPower<WeakPower>()
     };
 
@@ -38,7 +39,7 @@ public class GrappleBlow() : FrogKnightCard(1,
             .FromCard(this)
             .TargetingFiltered(this.GetTargets())
             .Execute(choiceContext);
-        await PowerCmd.Apply<ConstrictPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<ContfrogPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
 
     }
 

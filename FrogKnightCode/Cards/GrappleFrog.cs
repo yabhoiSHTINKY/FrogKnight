@@ -21,7 +21,7 @@ public class GrappleFrog() : FrogKnightCard(2,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
         HoverTipFactory.FromPower<GrappleFrogPower>(),
-        HoverTipFactory.FromPower<ConstrictPower>()
+        HoverTipFactory.FromPower<ContfrogPower>()
     };
 
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/grapplefrog.png";

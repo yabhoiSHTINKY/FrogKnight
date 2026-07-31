@@ -1,4 +1,5 @@
 using FrogKnight.FrogKnightCode.Cards;
+using FrogKnight.FrogKnightCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -23,7 +24,7 @@ public class Grapple() : FrogKnightCard(2,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<ConstrictPower>()
+        HoverTipFactory.FromPower<ContfrogPower>()
     };
     
 
@@ -43,7 +44,7 @@ public class Grapple() : FrogKnightCard(2,
         {
             Godot.GD.PrintErr($"[Grapple] Error in OnPlay: " + ex);
         }  
-        await PowerCmd.Apply<ConstrictPower>(choiceContext, play.Target, base.DynamicVars.Weak.BaseValue,
+        await PowerCmd.Apply<ContfrogPower>(choiceContext, play.Target, base.DynamicVars.Weak.BaseValue,
             base.Owner.Creature, this);
     }
     
