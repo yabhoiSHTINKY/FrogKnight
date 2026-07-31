@@ -12,7 +12,7 @@ namespace FrogKnight.FrogKnightCode.Powers;
 public class ContfrogPower() : FrogKnightPower
 {
     public override PowerType Type =>
-        PowerType.Buff;
+        PowerType.Debuff;
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
