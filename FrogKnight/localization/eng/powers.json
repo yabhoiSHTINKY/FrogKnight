@@ -9,7 +9,7 @@
   "FROGKNIGHT-GROWING_POWER_FROG_POWER.smartDescription": "Apply [blue]{Amount}[/blue] [gold]Vigor[/gold] for each card played.",
   "FROGKNIGHT-GROWING_POWER_FROG_POWER.title": "Growing",
   "FROGKNIGHT-SPEED_BUG_POWER.description": "Draw [blue]1[/blue] extra [gold]Card[/gold] per turn.",
-  "FROGKNIGHT-SPEED_BUG_POWER.smartDescription": "Draw [blue]{/Amount}[blue] extra [gold]Card[/gold] per turn.",
+  "FROGKNIGHT-SPEED_BUG_POWER.smartDescription": "Draw [blue]{Amount}[blue] extra [gold]Card[/gold] per turn.",
   "FROGKNIGHT-SPEED_BUG_POWER.title": "Speed Bug",
   "FROGKNIGHT-GRAPPLING_FROG_POWER.description": "At the start of your turn apply [blue]1[/blue] [gold]Grapple[/gold].",
   "FROGKNIGHT-GRAPPLING_FROG_POWER.smartDescription": "At the start of your turn apply [blue]{Amount}[/blue] [gold]Grapple[/gold].",
