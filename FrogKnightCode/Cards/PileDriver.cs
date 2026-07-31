@@ -17,7 +17,7 @@ public class PileDriver() : FrogKnightCard(2,
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/piledrive.png";
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        ..MakeCalculatedDamage(0, (card, target) => target?.GetPowerAmount<ContfrogPower>() ?? 0, 2)
+        ..MakeCalculatedDamage(0, (card, target) => target?.GetPowerAmount<GrappleFrogPower>() ?? 0, 2)
     ];
 
     protected override async Task OnPlay(

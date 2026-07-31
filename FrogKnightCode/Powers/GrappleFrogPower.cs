@@ -1,42 +1,38 @@
 using FrogKnight.FrogKnightCode.Powers;
-using Godot;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Helpers;
-using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Models.Powers;
-using MegaCrit.Sts2.Core.Nodes.Combat;
-using MegaCrit.Sts2.Core.Nodes.Rooms;
-using MegaCrit.Sts2.Core.Nodes.Vfx;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace FrogKnight.FrogKnightCode.Powers;
+
 
 public class GrappleFrogPower() : FrogKnightPower
 {
     public override PowerType Type =>
-        PowerType.Buff;
+        PowerType.Debuff;
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
+    public override string CustomPackedIconPath => "res://FrogKnight/images/powers/froggrapplepower.png";
+    public override string CustomBigIconPath => "res://FrogKnight/images/powers/froggrapplepower.png";
+
+    public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
-        HoverTipFactory.FromPower<ContfrogPower>()
-    };
-    
-    public override string CustomPackedIconPath => "res://FrogKnight/images/powers/grapplepower.png";
-    public override string CustomBigIconPath => "res://FrogKnight/images/powers/grapplepower.png";
-    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
-    {
-        if (!participants.Contains(base.Owner))
+        if (participants.Contains(base.Owner))
         {
-            return;
+            await CreatureCmd.Damage(choiceContext, base.Owner, base.Amount, ValueProp.Unpowered, base.Owner, null);
         }
-        Flash();
-        await Cmd.CustomScaledWait(0.2f, 0.4f);
-        await PowerCmd.Apply<ContfrogPower>(new ThrowingPlayerChoiceContext(), base.CombatState.HittableEnemies, base.Amount, base.Owner, null);
+    }
+
+    public override async Task AfterDeath(PlayerChoiceContext choiceContext, Creature creature, bool wasRemovalPrevented, float deathAnimLength)
+    {
+        if (!wasRemovalPrevented && creature == base.Applier)
+        {
+            await PowerCmd.Remove(this);
+        }
     }
 }

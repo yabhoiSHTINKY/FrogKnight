@@ -20,13 +20,13 @@ public class GrappleandRestrain() : FrogKnightCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
         new CardsVar(1),
-        new PowerVar<WeakPower>(1)
+        new PowerVar<GrappleFrogPower>(1)
     };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
         HoverTipFactory.FromCard<InnerPeace>(),
-        HoverTipFactory.FromPower<ContfrogPower>()
+        HoverTipFactory.FromPower<GrappleFrogPower>()
     };
 
     protected override async Task OnPlay(
@@ -34,7 +34,7 @@ public class GrappleandRestrain() : FrogKnightCard(1,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
-        await PowerCmd.Apply<ContfrogPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<GrappleFrogPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars["GrappleFrogPower"].BaseValue, base.Owner.Creature, this);
         try
         {
             for (int _i = 0; _i < 1; _i++)
@@ -53,6 +53,6 @@ public class GrappleandRestrain() : FrogKnightCard(1,
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Weak.UpgradeValueBy(1m);
+        base.DynamicVars["GrappleFrogPower"].UpgradeValueBy(1m);
     }
 }

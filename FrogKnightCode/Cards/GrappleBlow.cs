@@ -22,13 +22,12 @@ public class GrappleBlow() : FrogKnightCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[2]
     {
             new DamageVar(3m, ValueProp.Move),
-            new PowerVar<WeakPower>(1)
+            new PowerVar<GrappleFrogPower>(1)
     };
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
-        HoverTipFactory.FromPower<ContfrogPower>(),
-        HoverTipFactory.FromPower<WeakPower>()
+        HoverTipFactory.FromPower<GrappleFrogPower>(),
     };
 
     protected override async Task OnPlay(
@@ -39,13 +38,13 @@ public class GrappleBlow() : FrogKnightCard(1,
             .FromCard(this)
             .TargetingFiltered(this.GetTargets())
             .Execute(choiceContext);
-        await PowerCmd.Apply<ContfrogPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars.Weak.BaseValue, base.Owner.Creature, this);
+        await PowerCmd.Apply<GrappleFrogPower>(choiceContext, base.CombatState!.HittableEnemies, base.DynamicVars["GrappleFrogPower"].BaseValue, base.Owner.Creature, this);
 
     }
 
     protected override void OnUpgrade()
     {
         base.DynamicVars.Damage.UpgradeValueBy(2m);
-        base.DynamicVars.Weak.UpgradeValueBy(1m);
+        base.DynamicVars["GrappleFrogPower"].UpgradeValueBy(1m);
     }
 }
