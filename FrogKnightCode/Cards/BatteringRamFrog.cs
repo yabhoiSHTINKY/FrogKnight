@@ -18,7 +18,7 @@ public class BatteringRamFrog() : FrogKnightCard(1,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        ..MakeCalculatedDamage(0, (card, target) => card.Owner.Creature.GetPowerAmount<PlatingPower>(),2)];
+        ..MakeCalculatedDamage(0, (card, target) => card.Owner.Creature.GetPowerAmount<PlatingPower>(),1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
     {
