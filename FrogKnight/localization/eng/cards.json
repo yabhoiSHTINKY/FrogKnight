@@ -45,7 +45,7 @@
   "FROGKNIGHT-LUCERNE.title": "Lucerne",
   "FROGKNIGHT-SPEED_BUG_FROG.description": "Draw 1 card now.\nDraw 1 additional card each turn.",
   "FROGKNIGHT-SPEED_BUG_FROG.title": "Speed Bug",
-  "FROGKNIGHT-BATTERING_RAM_FROG.description": "Deal 2 damage per [gold]Plating[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
+  "FROGKNIGHT-BATTERING_RAM_FROG.description": "Deal 1 damage per [gold]Plating[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
   "FROGKNIGHT-BATTERING_RAM_FROG.title": "Battering Ram",
   "FROGKNIGHT-TRUE_PEACE_FROG.description": "Generate 5 [gold]Inner Peace[/gold].",
   "FROGKNIGHT-TRUE_PEACE_FROG.title": "True Peace",
