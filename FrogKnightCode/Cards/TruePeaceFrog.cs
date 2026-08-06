@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace FrogKnight.FrogKnightCode.Cards;
 
 public class TruePeaceFrog() : FrogKnightCard(3,
-    CardType.Skill, CardRarity.Rare,
+    CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => new CardKeyword[]
