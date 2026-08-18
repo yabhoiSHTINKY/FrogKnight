@@ -14,7 +14,7 @@ public class QuickJabsFrog() : FrogKnightCard(2,
     public override string CustomPortraitPath => "res://FrogKnight/images/card_portraits/quickjab.png";
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new DamageVar(1, ValueProp.Move),
+        new DamageVar(1m, ValueProp.Move),
     };
 
     protected override async Task OnPlay(
@@ -22,7 +22,9 @@ public class QuickJabsFrog() : FrogKnightCard(2,
         CardPlay play)
     {
         ArgumentNullException.ThrowIfNull(play.Target, "cardPlay.Target");
-        await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(5).FromCard(this)
+        await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
+            .WithHitCount(5)
+            .FromCard(this)
             .Targeting(play.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);

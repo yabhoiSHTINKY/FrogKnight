@@ -37,7 +37,8 @@ public class PunchUp() : FrogKnightCard(1,
         try
         {
             await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-                .FromCard(this).Targeting(play.Target)
+                .FromCard(this)
+                .Targeting(play.Target)
                 .WithHitFx("vfx/vfx_attack_slash", null, "blunt_attack.mp3")
                 .Execute(choiceContext);
         }
