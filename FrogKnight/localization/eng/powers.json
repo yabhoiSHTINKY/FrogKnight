@@ -30,6 +30,6 @@
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.smartDescription": "[gold]Weak[/gold] has double as effectiveness",
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.title": "Imposing Figure",
   "FROGKNIGHT-GRAPPLE_FROG_POWER.description": "Grappled creatures take [blue]1[/blue] damage a the end of their turn.",
-  "FROGKNIGHT-GRAPPLE_FROG_POWER.smartDescription": "At the end of {OnPlayer:your take, take|its turn, takes} [blue]{Amount}[/blue] damage.",
+  "FROGKNIGHT-GRAPPLE_FROG_POWER.smartDescription": "At the end of {OnPlayer:your turn, take take|its turn, takes} [blue]{Amount}[/blue] damage.",
   "FROGKNIGHT-GRAPPLE_FROG_POWER.title": "Grapple"
 }

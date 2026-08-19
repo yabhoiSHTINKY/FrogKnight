@@ -137,7 +137,7 @@
   "FROGKNIGHT-THIS_WONT_DO.title": "This Wont Do",
   "FROGKNIGHT-BREAK_THEIR_WILL.description": "Deal {Damage:diff()} damage.\nApply {WeakPower:diff()} [gold]Weak[/gold] and [gold]Vulnerable[/gold].\nCreate 2 [gold]Debris[/gold] in your [gold]Hand[/gold].",
   "FROGKNIGHT-BREAK_THEIR_WILL.title": "Break Their Will",
-  "FROGKNIGHT-ROCK.description": "Pickup a rock shaped potion.\n...or is it a potion shaped rock?\nHmmmmm.",
+  "FROGKNIGHT-ROCK.description": "Pickup a rock shaped potion.\n...or is it a potion shaped rock?\nHmmmmm...",
   "FROGKNIGHT-ROCK.title": "Rock",
   "FROGKNIGHT-CHEERS_FROG.description": "Gain {Energy:energyIcons()}.\nGain {Cards} [gold]Dazed[/gold].",
   "FROGKNIGHT-CHEERS_FROG.title": "Cheers Frog",
