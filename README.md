@@ -7,4 +7,4 @@ If you find a bug please report it through the issues tab [here](https://github.
 No AI was used to make this mod.
 
 ## Not in your Language?
-We are welcome to community translations! See [this file](main/FrogKnight/localization/README.md) for more instructions.
+We are welcome to community translations! See [this file](./FrogKnight/localization/README.md) for more instructions.
