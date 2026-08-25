@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using MegaCrit.Sts2.Core.Nodes.Combat;
 
 namespace FrogKnight.FrogKnightCode.Character;
 
@@ -40,6 +41,13 @@ public class FrogKnight : PlaceholderCharacterModel
     [
         ModelDb.Relic<KnightsHonor>()
     ];
+
+    //Possibly Redundant?
+    public override NCreatureVisuals? CreateCustomVisuals()
+    {
+        return NodeFactory<NCreatureVisuals>.CreateFromScene("res://FrogKnight/images/character/FrogAnims3.tscn");
+    }
+
 
     public override CardPoolModel CardPool => ModelDb.CardPool<FrogKnightCardPool>();
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<FrogKnightRelicPool>();
