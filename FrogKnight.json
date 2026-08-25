@@ -1,9 +1,12 @@
 ﻿{
   "id": "FrogKnight",
-  "name": "FrogKnight",
-  "author": "Yah_Boi_Leon",
+  "name": "Frog Knight",
+  "author": [
+    "Yah_Boi_Leon",
+    "TotalSync"
+  ],
   "description": "Slay the Spire 2 character mod created from a template for use with BaseLib",
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "min_game_version": "0.107.0",
   "has_pck": true,
   "has_dll": true,
