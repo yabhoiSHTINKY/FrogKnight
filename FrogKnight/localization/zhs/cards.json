@@ -101,7 +101,7 @@
   "FROGKNIGHT-UNPHASED_FROG.title": "不分阶段",
   "FROGKNIGHT-PRAYER_FROG.description": "将所有状态卡转变为[gold]内心平静[/gold]。",
   "FROGKNIGHT-PRAYER_FROG.title": "祈祷",
-  "FROGKNIGHT-DESTABILIZE_FROG.description": "造成{Damage:diff()}点伤害。\n移除敌人的{StrengthLoss}[gold]力量[/gold]。",
+  "FROGKNIGHT-DESTABILIZE_FROG.description": "造成{Damage:diff()}点伤害。\n移除敌人的{StrengthLoss:diff()}[gold]力量[/gold]。",
   "FROGKNIGHT-DESTABILIZE_FROG.title": "破坏稳定",
   "FROGKNIGHT-PEACE_EXHAUSTED_FROG.description": "[gold]排气堆[/gold]中的每个[gold]内心平静[/gold]造成 4 点伤害。{InCombat:\n(造成 {CalculatedDamage:diff()} 点伤害)|}",
   "FROGKNIGHT-PEACE_EXHAUSTED_FROG.title": "和平耗尽",
