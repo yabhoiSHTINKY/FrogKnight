@@ -29,7 +29,7 @@
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.description": "[gold]弱点[/gold]效果加倍。",
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.smartDescription": "[gold]弱点[/gold]效果加倍。",
   "FROGKNIGHT-IMPOSING_FIGURE_POWER.title": "气度不凡的身影",
-  "FROGKNIGHT-GRAPPLE_FROG_POWER.description": "被擒抱的生物在其回合结束时受到 [blue]1[/blue] 点伤害。",
-  "FROGKNIGHT-GRAPPLE_FROG_POWER.smartDescription": "{OnPlayer:在你的回合结束时，受到[blue]{Amount}[/blue] 点伤害。|在回合结束时，受到[blue]{Amount}[/blue] 点伤害。}",
+  "FROGKNIGHT-GRAPPLE_FROG_POWER.description": "被擒抱的生物在其回合结束时受到[blue]1[/blue]点伤害。",
+  "FROGKNIGHT-GRAPPLE_FROG_POWER.smartDescription": "{OnPlayer:在你的回合结束时，受到[blue]{Amount}[/blue]点伤害。|在回合结束时，受到[blue]{Amount}[/blue]点伤害。}",
   "FROGKNIGHT-GRAPPLE_FROG_POWER.title": "抓钩"
 }
