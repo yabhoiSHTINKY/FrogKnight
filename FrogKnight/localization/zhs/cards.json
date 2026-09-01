@@ -147,7 +147,7 @@
   "FROGKNIGHT-ZM_PLATING.title": "装甲盟友",
   "FROGKNIGHT-ZM_VIGOR.description": "将{VigorPower:diff()}[gold]活力[/gold] 应用于其他玩家。",
   "FROGKNIGHT-ZM_VIGOR.title": "充满活力的盟友",
-  "FROGKNIGHT-ZQUICKPICKMEUP.description": "向所有玩家提供{Energy:energy Icons()}",
+  "FROGKNIGHT-ZQUICKPICKMEUP.description": "向所有玩家提供{Energy:energyIcons()}",
   "FROGKNIGHT-ZQUICKPICKMEUP.title": "快速接我",
   "FROGKNIGHT-SMACK_DOWN.description": "造成{Damage:diff()}点伤害。\n应用{WeakPower}[gold]弱[/gold]。",
   "FROGKNIGHT-SMACK_DOWN.title": "击落",
