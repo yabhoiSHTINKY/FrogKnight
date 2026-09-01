@@ -1,8 +1,8 @@
 {
-  "FROGKNIGHT-KNIGHTS_HONOR.title": "Knights Honor",
-  "FROGKNIGHT-KNIGHTS_HONOR.description": "At the start of combat, gain 3 Plating",
-  "FROGKNIGHT-KNIGHTS_HONOR.flavor": "The honor of a knight red with battle.",
-  "FROGKNIGHT-NOBLE_KNIGHTS_HONOR.title": "Noble Knights Honor",
-  "FROGKNIGHT-NOBLE_KNIGHTS_HONOR.description": "At the start of combat, Gain 6 Plating",
-  "FROGKNIGHT-NOBLE_KNIGHTS_HONOR.flavor": "Purple is the color of nobility."
+  "FROGKNIGHT-KNIGHTS_HONOR.title": "骑士的荣誉",
+  "FROGKNIGHT-KNIGHTS_HONOR.description": "战斗开始时，获得3层护甲。",
+  "FROGKNIGHT-KNIGHTS_HONOR.flavor": "染满战火硝烟的骑士荣耀。",
+  "FROGKNIGHT-NOBLE_KNIGHTS_HONOR.title": "高贵骑士的荣耀",
+  "FROGKNIGHT-NOBLE_KNIGHTS_HONOR.description": "战斗开始时，获得 6 点护甲。",
+  "FROGKNIGHT-NOBLE_KNIGHTS_HONOR.flavor": "紫色是高贵的颜色。"
 }
