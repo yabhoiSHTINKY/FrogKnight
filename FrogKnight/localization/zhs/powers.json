@@ -18,7 +18,7 @@
   "FROGKNIGHT-FIGHTING_PEACE_FROG_POWER.smartDescription": "每次你打出[gold]内心平静[/gold]时都会造成[blue]{Amount}[/blue]点伤害。",
   "FROGKNIGHT-FIGHTING_PEACE_FROG_POWER.title": "争取和平",
   "FROGKNIGHT-DEFENDING_PEACE_FROG_POWER.description": "每次玩[gold]内心平静[/gold]时，都会获得[blue]1[/blue][gold]电镀[/gold]和[blue]1[/blue][gold]活力[/gold]。",
-  "FROGKNIGHT-DEFENDING_PEACE_FROG_POWER.smartDescription": "每次玩[gold]内心平静[/gold]时，都会获得[blue]1[/blue][gold]电镀[/gold]和[blue]{Amount}[/blue][gold]活力[/gold]。",
+  "FROGKNIGHT-DEFENDING_PEACE_FROG_POWER.smartDescription": "每次玩[gold]内心平静[/gold]时，都会获得[blue]{Amount}[/blue][gold]电镀[/gold]和[blue]{Amount}[/blue][gold]活力[/gold]。",
   "FROGKNIGHT-DEFENDING_PEACE_FROG_POWER.title": "捍卫和平",
   "FROGKNIGHT-RECKLESS_FROG_POWER.description": "在每个回合开始时，获得[blue]1[/blue]点[gold]能量[/gold]。",
   "FROGKNIGHT-RECKLESS_FROG_POWER.smartDescription": "在每个回合开始时，获得 {Amount:energyIcons()}。",
